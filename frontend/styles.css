@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body & container */
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Habit list */
+#habit-list {
+    list-style: none;
+}
+
+.habit-item {
+    background: #f0f4f8;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-item.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+}
+
+.habit-actions button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.habit-actions button.toggle {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.habit-actions button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.habit-actions button:hover {
+    opacity: 0.8;
+}
